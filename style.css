@@ -172,7 +172,7 @@ h4 span{
     border: 1px solid #fff;
     padding: 20px 50px;
     font-size: 17px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     transform: translate(0%, 350%);
     cursor: pointer;
 }
@@ -355,10 +355,7 @@ h4 span{
     .teapa{
         display: none;
     }
-
-
 }
-
 .maps{               /* de aici incep hartile */
     width: 100%;
     min-height: 40vh;
@@ -663,7 +660,7 @@ h3{
     left: 90%;
 }
 .sidebar ul{
-    margin-top: 20px;
+    margin-top: 20px;   
 
 }
 .sidebar ul li{
@@ -676,6 +673,7 @@ h3{
     border-radius: 12px;
 }
 .sidebar ul li .tooltip{
+    display: none;
     position: absolute;
     left: 152px;
     top: 50%;
@@ -683,7 +681,7 @@ h3{
     border-radius: 6px;
     height: 35px;
     width: 122px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     line-height: 35px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
