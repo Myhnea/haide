@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title> Nuke Utilities </title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="shortcut icon" type="x-icon" href="xxx/smoke.png">
+</head>
+<body>
+            <div class = "nav-links" id = "nav" style="position: absolute; top: 20px; right: 100px;">
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "maps.html">MAPS</a></li>
+                    <li><a href = "contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name">Nuke</div>
+            </div>
+            <i class="fas fa-bars" id='betn'></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="smokes_nuke.html">
+                    <img src="https://img.icons8.com/emoji/48/000000/dashing-away.png"/>
+                    <span class="links_name">Smokes</span>
+                </a>
+                <span class="tooltip">Smokes</span>
+            </li>
+            <li>
+                <a href="molotovs_nuke.html">
+                    <img src="https://img.icons8.com/emoji/48/000000/fire.png"/>
+                    <span class="links_name">Molotovs</span>
+                </a>
+                <span class="tooltip">Molotovs</span>
+            </li>
+            <li>
+                <a href="flashbangs_nuke.html">
+                    <img src="https://img.icons8.com/officel/48/000000/lightning-bolt.png"/>
+                    <span class="links_name">Flashbangs</span>
+                </a>
+                <span class="tooltip">Flashbangs</span>
+            </li>
+            <li>
+                <a href="he_nuke.html">
+                    <img src="https://img.icons8.com/office/48/000000/flash-bang.png"/>
+                    <span class="links_name">HE Grenades</span>
+                </a>
+                <span class="tooltip">HE Grenades</span>
+            </li>
+            
+        </ul>
+        </div>
+
+<!-- animatie de scroll catre meniul de grenade -->
+
+<div class="scroll">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- background animat -->
+
+<div id="bg"></div> 
+
+<!-- js pentru background animat -->
+
+<script type="text/javascript" src="particles.min.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+
+<!-- adaugare video -->
+
+<div>
+    <img src='xxx/nuke_cal.jpg' width='50%' height='70%' style='position:absolute;top:130px;left:445px;' allowfullscreen>
+    </img>
+</div>
+
+<!-- js pentru deschidere meniu grenade -->
+
+<script>
+
+    let btn = document.querySelector("#betn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+
+
+</script>
+
+
+</body>
+</html>
