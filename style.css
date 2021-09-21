@@ -3,6 +3,7 @@ html{
 }
 body{
     background-color: #000;
+    touch-action: none;
 }
 *{
     margin: 0;
@@ -10,6 +11,47 @@ body{
     font-family: 'Noto Sans', sans-serif;
 
 }
+/* .skeleton{
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeleton-text{
+    width: 100%;
+    height: .5rem;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+}
+.skeleton-text:last-child{                                  IN CAZ CA VREAU LOADING. DAR MAI TREBUIE SI CEVA JS
+    margin-bottom: 0;
+    width: 80%;
+}
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+} */
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 /* .loader{
     position: relative;
     width: 150px;
@@ -56,7 +98,7 @@ body{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(xxx/cs3.jfif);
+    background-image: url(xxx/cs3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -97,7 +139,7 @@ nav img{
     border-radius: 20px;
 }
 .nav-links ul li:hover{
-    background: #e6f13d;
+    background: #b8610f8e;
     opacity: 1;
     border-radius: 20px;
 }
@@ -164,6 +206,38 @@ h4 span{
     left: 50%;
     transform: translate(-50%, 750%);
     text-align: center;
+}
+.text-config{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+.text-config h2{
+    font-size: 60px;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 750%);
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 span{
+    -webkit-animation: tips 10s infinite ease-in-out;
+    animation: tips 10s infinite ease-in-out;
+}
+@keyframes tips{
+    0%{
+        color: red
+    }
+    100%{
+        color: #00d0ff;
+    }
 }
 .btn{
     display: inline-block;
@@ -768,6 +842,8 @@ h3{
 .content-table td{
     padding-bottom: 12px 15px;
     text-align: center;
+    color: #fff;
+    background-color: #000000;
 }
 .content-table tbody tr{
     border-bottom: 1px solid #dddd;
@@ -847,18 +923,19 @@ h3{
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    border: 3px solid #ccc2c2c7;
+    border: 3px solid #42f8f2; /*#ccc2c2c7*/
     position: relative;
     z-index: 1;
     text-decoration: none;
     transform: translateY(-200%);
+    background-color: #000000;
     
 }
 .btn22:hover{
     color: #fff;
     cursor: pointer;
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 22px;
 
 }
 .btn22:before{
@@ -7659,4 +7736,90 @@ ul{
     top: 40%;
     left: 35%;
     color: red;
+}
+.vs1 ul{            /* smoke one way b stairs */
+    font-size: auto;
+    position: absolute;
+    color: #15ff00;
+    margin: 0 13px;
+    padding: 12px 0;
+    transform: translate(352%, -854%);
+    display: flex;
+    text-align: center;
+    vertical-align: bottom;
+    width: 10%;
+}
+.vs1 ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+.vs1 ul li .fa{
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+}
+.vs1 ul li .fa:hover{
+    color: #fff;
+}
+.vs1 ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff000046;/*#ff000046; */
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(253, 252, 252, 0.973);
+
+}
+.vs1 ul li a:hover{
+    transform: translate(0, -10px);
+} 
+.vs1{
+    flex-basis: 40%;
+}
+.vs2 ul{            /* smoke b cross */
+    font-size: auto;
+    position: absolute;
+    color: #15ff00;
+    margin: 0 13px;
+    padding: 12px 0;
+    transform: translate(369%, -1034%);
+    display: flex;
+    text-align: center;
+    vertical-align: bottom;
+    width: 10%;
+}
+.vs2 ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+.vs2 ul li .fa{
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+}
+.vs2 ul li .fa:hover{
+    color: #fff;
+}
+.vs2 ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff000046;/*#ff000046; */
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(253, 252, 252, 0.973);
+
+}
+.vs2 ul li a:hover{
+    transform: translate(0, -10px);
+} 
+.vs2{
+    flex-basis: 40%;
 }
